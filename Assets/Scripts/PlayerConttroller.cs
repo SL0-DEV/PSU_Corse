@@ -18,12 +18,17 @@ public class PlayerConttroller : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.12f;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Effect")] 
+    [SerializeField] private ParticleSystem dustEffect;
+    [SerializeField] private GameObject doubleJumpEffect;
+    
     private Vector2 _movementAxis;
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
     private Animator _anim;
 
     private bool _isGrounded;
+    private bool _wasGroundedLastFrame;
     private int _jumpsRemaining;
 
     void Start()
@@ -40,8 +45,23 @@ public class PlayerConttroller : MonoBehaviour
         // ground check using OverlapCircle (more reliable than tiny Linecast)
         _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // Detect landing
+        if (_wasGroundedLastFrame && _isGrounded)
+        {
+            dustEffect.Play();
+            _wasGroundedLastFrame = false;
+        }
+        
         // reset jumps when grounded
-        if (_isGrounded) _jumpsRemaining = maxJumps;
+        if (_isGrounded)
+        {
+            _jumpsRemaining = maxJumps;
+            
+        }
+        else
+        {
+            _wasGroundedLastFrame = true;
+        }
 
         Animating();
     }
@@ -93,6 +113,11 @@ public class PlayerConttroller : MonoBehaviour
             _rb.linearVelocity = v;
 
             _anim.SetTrigger("Jump");
+            if (!_isGrounded)
+            {
+                GameObject dust = Instantiate(doubleJumpEffect, groundCheck.position, Quaternion.identity);
+                Destroy(dust, .5f);
+            }
             _jumpsRemaining--;
         }
     }

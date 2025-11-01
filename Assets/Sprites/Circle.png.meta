@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-guid: ede4b03d4049f481a80ce6756418b385
-AssetOrigin:
-  serializedVersion: 1
-  productId: 22009
-  packageName: 2D Coin Animated - 2D RPK
-  packageVersion: 1.0
-  assetPath: Assets/2DRPK/Sprites/coin-animation.png
-  uploadId: 22482
+guid: fe7a88534799ad24b80feb6bce2ecf92
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2413806693520163455
+    second: Circle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,8 +33,8 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
+  textureFormat: 1
+  maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
     filterMode: 0
@@ -70,15 +66,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -89,7 +85,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -102,7 +98,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -117,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coin-animation_0
+      name: Circle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3213e26135de0ac70800000000000000
-      internalID: 8980438598086963491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: coin-animation_1
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 0
-        width: 51
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c7c5bc9deb46a6e20800000000000000
-      internalID: 3344596444136561788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: coin-animation_2
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 0
-        width: 23
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 427b1cdc640541010800000000000000
-      internalID: 1158639269171017508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: coin-animation_3
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 0
-        width: 50
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6ef0a5cb5af635a0800000000000000
-      internalID: -6541766136644436370
+      spriteID: 18d3544e99f608ed0800000000000000
+      internalID: -2413806693520163455
       vertices: []
       indices: 
       edges: []
@@ -218,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coin-animation_0: 8980438598086963491
-      coin-animation_1: 3344596444136561788
-      coin-animation_2: 1158639269171017508
-      coin-animation_3: -6541766136644436370
+      Circle_0: -2413806693520163455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
